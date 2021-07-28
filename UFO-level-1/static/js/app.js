@@ -19,22 +19,30 @@ form.on("submit",runEnter);
 function runEnter() {
     // Prevent page from refreshing
     d3.event.preventDefault();
-    // Get input value
+
+        // Get input values
     var inputDate = d3.select("#datetime").property("value");
     console.log(inputDate);
 
     var inputShape = d3.select("#shape").property("value");
     console.log(inputShape);
 
+    var inputState = d3.select("#state").property("value");
+    console.log(inputState);
+
     var filteredData = data;
     
     
-    if (inputDate != "") {
+    if (inputDate != "") { // only filter if a date is entered
       filteredData = filteredData.filter(data => data.datetime === inputDate);
       console.log(filteredData)
     };
-    if (inputShape != "Choose a shape...") { //only filter shape if a shape is chosen
+    if (inputShape != "Choose a shape...") { //only filter if a shape is chosen
       filteredData = filteredData.filter(data => data.shape === inputShape);
+      console.log(filteredData)
+    };
+    if (inputState != "") { //only filter if a state is entered
+      filteredData = filteredData.filter(data => data.state === inputState.toLowerCase());
       console.log(filteredData)
     };
 

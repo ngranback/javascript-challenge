@@ -36,10 +36,11 @@
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="Enter a date...">
+                        <label for="date">Filter by Date</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="Example: 1/1/2010">
                       </li>
                       <li class="filter list-group-item">
+                        <label for="shape">Filter by Shape</label>
                         <select class="form-control" type="dropdown" id="shape">
                           <option selected>Choose a shape...</option>
                           <option value="circle">circle</option>
@@ -53,6 +54,10 @@
                           <option value="other">other</option>
                           <option value="unknown">unknown</option>
                         </select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="date">Filter by State Code</label>
+                        <input class="form-control" id="state" type="text" placeholder="Example: CA">
                       </li>
                     </ul>
                   </div>
