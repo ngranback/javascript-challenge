@@ -1,8 +1,10 @@
 # javascript-challenge
 
 ### Filtering UFO Data
-The website includes 5 filters. 
+The website includes 5 filters. Any or all of the filters can be used at once.
+
 Shape and Country are filtered by dropdown list due to their limited choices.
+
 The rest are filtered by text input.
 Date includes an example to show the format of date that is required.
 State can accept lower or uppercase entries.
